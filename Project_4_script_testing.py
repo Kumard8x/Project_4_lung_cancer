@@ -6,7 +6,7 @@ import joblib
 model = joblib.load('random_forest_model.pkl')
 onehot_encoder = joblib.load('onehot_encoder.pkl')
 
-streamlit.title("Lunge Cancer Survival App")
+streamlit.title("Lung Cancer Survival App")
 streamlit.write("Enter Patient Detail to Predict Survival")
 
 col0, col1 = streamlit.columns(2)
@@ -53,3 +53,12 @@ if streamlit.button('Prediction Survival'):
         streamlit.success('The patient is likely to survive.')
     else:
         streamlit.error('The patient is not likely to survive.')
+
+
+streamlit.markdown(""" ---
+    ⚙️ Build By **Deepak Kumar** \n
+    📩 **Contact Me:** 
+    🔗 [LinkedIn](https://www.linkedin.com/in/deepak-kumar8/) 
+    🔗 [GitHub](https://github.com/Kumard8x)
+    📧 Email: deepak.kumar030151@gmail.com  
+    """)
